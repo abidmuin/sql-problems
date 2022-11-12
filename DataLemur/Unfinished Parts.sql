@@ -1,0 +1,5 @@
+-- https://datalemur.com/questions/tesla-unfinished-parts
+
+SELECT part FROM parts_assembly
+WHERE finish_date IS NULL
+GROUP BY part;
